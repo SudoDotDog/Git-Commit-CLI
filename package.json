@@ -1,0 +1,40 @@
+{
+  "name": "@sudoo/git-commit-cli",
+  "version": "1.0.0",
+  "description": ":bulb: Git Commit CLI",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SudoDotDog/Git-Commit-CLI.git"
+  },
+  "keywords": [
+    "Sudoo"
+  ],
+  "author": "WMXPY",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SudoDotDog/Git-Commit-CLI/issues"
+  },
+  "homepage": "https://github.com/SudoDotDog/Git-Commit-CLI#readme",
+  "dependencies": {
+    "@sudoo/git-commit": "^1.0.0"
+  },
+  "devDependencies": {
+    "@sudoo/io": "^1.8.0",
+    "@sudoo/triforce": "^2.9.11"
+  },
+  "nyc": {
+    "extension": [
+      ".ts"
+    ],
+    "include": [
+      "src/**/*.ts"
+    ],
+    "instrument": true,
+    "reporter": [
+      "json",
+      "text-summary"
+    ],
+    "report-dir": "coverage",
+    "sourceMap": true
+  }
+}
